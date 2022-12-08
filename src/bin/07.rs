@@ -153,7 +153,7 @@ pub fn part_two(input: &str) -> Option<usize> {
     state.tree.nodes.iter().for_each(|(k, v)| {
         rec_sums.insert(k.clone(), state.clone().sum_recursive_size(v));
     });
-    let target = 70000000 - rec_sums.get("/").unwrap();
+    let target = 30000000 - (70000000  - rec_sums.get("/").unwrap());
     Some(find_smallest_folder(rec_sums, target))
 }
 
