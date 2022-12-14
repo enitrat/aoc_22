@@ -2,7 +2,6 @@ extern crate core;
 
 use std::cmp::Ordering::{Greater, Less, Equal};
 use std::collections::VecDeque;
-use std::ops::Add;
 
 #[derive(Clone, Debug)]
 enum Token {
